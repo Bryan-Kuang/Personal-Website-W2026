@@ -1,6 +1,5 @@
 export interface Skill {
   name: string;
-  level: number; // 0-100
 }
 
 export interface SkillsData {
@@ -10,19 +9,31 @@ export interface SkillsData {
 
 export const skills: SkillsData = {
   software: [
-    { name: "React / TypeScript", level: 90 },
-    { name: "Node.js / Express", level: 85 },
-    { name: "Python", level: 90 },
-    { name: "AWS / Cloud", level: 75 },
-    { name: "Docker / CI/CD", level: 80 },
-    { name: "PostgreSQL", level: 85 }
+    { name: "React" },
+    { name: "TypeScript" },
+    { name: "Next.js" },
+    { name: "Node.js" },
+    { name: "Python" },
+    { name: "PostgreSQL" },
+    { name: "Prisma" },
+    { name: "Docker" },
+    { name: "AWS" },
+    { name: "CI/CD" },
+    { name: "Electron" },
+    { name: "Tailwind CSS" }
   ],
   embedded: [
-    { name: "C / C++", level: 95 },
-    { name: "RTOS", level: 85 },
-    { name: "ARM Cortex", level: 80 },
-    { name: "PCB Design", level: 70 },
-    { name: "I2C / SPI / UART", level: 90 },
-    { name: "Linux Kernel", level: 65 }
+    { name: "C" },
+    { name: "C++" },
+    { name: "RTOS (FreeRTOS)" },
+    { name: "ARM Cortex-M" },
+    { name: "STM32" },
+    { name: "Linux System Programming" },
+    { name: "Verilog" },
+    { name: "ASIC Design" },
+    { name: "PCB Design" },
+    { name: "I2C / SPI / UART" },
+    { name: "POSIX API" },
+    { name: "GDB / Valgrind" }
   ]
 };

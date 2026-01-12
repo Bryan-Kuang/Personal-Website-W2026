@@ -45,23 +45,18 @@ export const About: React.FC = () => {
                 <span className="w-2 h-8 bg-blue-500 rounded-full" />
                 Software Skills
               </h3>
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-3">
                 {skills.software.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-base font-medium text-gray-700">{skill.name}</span>
-                      <span className="text-sm text-gray-500">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-100 rounded-full h-2.5">
-                      <motion.div 
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, ease: "easeOut" }}
-                        className="bg-blue-500 h-2.5 rounded-full" 
-                      />
-                    </div>
-                  </div>
+                  <motion.span
+                    key={skill.name}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                    viewport={{ once: true }}
+                    className="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium text-sm border border-blue-100 shadow-sm"
+                  >
+                    {skill.name}
+                  </motion.span>
                 ))}
               </div>
             </div>
@@ -71,23 +66,18 @@ export const About: React.FC = () => {
                 <span className="w-2 h-8 bg-green-500 rounded-full" />
                 Embedded Skills
               </h3>
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-3">
                 {skills.embedded.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-base font-medium text-gray-700">{skill.name}</span>
-                      <span className="text-sm text-gray-500">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-100 rounded-full h-2.5">
-                      <motion.div 
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, ease: "easeOut" }}
-                        className="bg-green-500 h-2.5 rounded-full" 
-                      />
-                    </div>
-                  </div>
+                  <motion.span
+                    key={skill.name}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                    viewport={{ once: true }}
+                    className="px-4 py-2 bg-green-50 text-green-700 rounded-lg font-medium text-sm border border-green-100 shadow-sm"
+                  >
+                    {skill.name}
+                  </motion.span>
                 ))}
               </div>
             </div>
