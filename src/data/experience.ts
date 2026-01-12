@@ -11,29 +11,29 @@ export interface Experience {
 export const experience: Experience[] = [
   {
     id: 1,
-    company: "Tech Solutions Inc.",
-    role: "Senior Embedded Engineer",
-    duration: "2023 - Present",
-    type: "embedded",
-    description: "Leading the firmware development for next-generation IoT devices. Optimized power consumption by 40% and implemented secure OTA updates.",
-    technologies: ["C", "RTOS", "ARM Cortex-M", "Bluetooth LE"]
+    company: "Electrium Mobility (Student Design Team)",
+    role: "Web Development Lead",
+    duration: "Sep 2025 – Dec 2025",
+    type: "software",
+    description: "Led the web development subteam, coordinating delivery for internal platforms and Discord bots. Developed and maintained the team’s public website and merchandise storefront with full end-to-end ownership. Supported cloud deployment and mentored new members.",
+    technologies: ["Web Development", "Team Leadership", "Cloud Deployment", "Mentorship"]
   },
   {
     id: 2,
-    company: "Digital Innovations Corp",
-    role: "Full Stack Developer",
-    duration: "2021 - 2023",
-    type: "software",
-    description: "Developed and maintained scalable web applications. Reduced page load times by 50% through code splitting and asset optimization.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker"]
+    company: "ByteDance (TikTok International)",
+    role: "Privacy Technical Review Engineer",
+    duration: "Jan 2025 – Apr 2025",
+    type: "both",
+    description: "Conducted privacy-focused functional reproduction testing for new TikTok features. Analyzed network traffic (API requests, payloads) to assess data access and privacy risks. Authored technical review reports and developed Python automation scripts to improve testing efficiency.",
+    technologies: ["Privacy Engineering", "Network Analysis", "Python", "Technical Reporting", "Compliance"]
   },
   {
     id: 3,
-    company: "StartUp Hub",
-    role: "Junior Developer",
-    duration: "2020 - 2021",
-    type: "both",
-    description: "Collaborated on both hardware interface software and web dashboard development for industrial monitoring systems.",
-    technologies: ["Python", "Django", "Raspberry Pi", "Linux"]
+    company: "Xi’an Kuaike Network Information Partnership Technology",
+    role: "Software Development Co-op",
+    duration: "May 2024 – Aug 2024",
+    type: "software",
+    description: "Architected and executed a Next.js prototype with full-stack features, including authentication and API simulation. Developed 12 reusable components within a Vite-based monorepository, adopted by 2 other internal projects. Implemented cookie-based session management supporting 3 distinct user permission levels.",
+    technologies: ["Next.js", "Vite", "Monorepo", "React", "Authentication"]
   }
 ];
